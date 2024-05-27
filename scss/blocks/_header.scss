@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: center;
+    &-nav {
+        display: flex;
+        padding: 50px 0px;
+        width: 1180px;
+        justify-content: space-between;
+        &__logo {
+            h1 {
+                @include font(600,18px);
+                color: white;
+            }
+        }
+        &__links {
+            ul {
+                display: flex;
+                gap: 50px;
+                li {
+                    @include font(400,12px);
+                    color: rgba(255,255,255, 0.67);
+                }
+            }
+            .header-nav__burger {
+                display: none;
+            }
+        }
+    }
+}

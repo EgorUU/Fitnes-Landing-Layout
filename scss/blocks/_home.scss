@@ -1,0 +1,79 @@
+.home {
+    display: flex;
+    justify-content: center;
+    &-container {
+        padding-top: 184px - 50;
+        display: flex;
+        transform: translateX(8%);
+        .new {
+            width: 329px;
+            height: 36px;
+            background-color: rgba(255,255,255, 0.1);
+            border-radius: 200px;
+            display: flex;
+            align-items: center;
+            p {
+                @include font(400,12px);
+                color: rgba(255,255,255, 0.8);
+                padding-left: 15px;
+            }
+            button {
+                width: 46px;
+                height: 26px;
+                background-color: #25AB75;
+                border-radius: 200px;
+                margin-left: 5px;
+                color: white;
+                @include font(600,10px)
+            }
+        }
+        h1, span {
+            @include font(600,170px);
+            color: rgba(255,255,255);
+            letter-spacing: -2px;
+            line-height: 150px;
+            padding-top: 31px;
+            padding-bottom: 42px;
+            
+        }
+        .home-content__p {
+            @include font(400,16px);
+            color: rgba(255,255,255, 0.5);
+            padding-top: 12px;
+            padding-bottom: 50px;
+        }
+        .home-buttons {
+            display: flex;
+            gap: 30px;
+            button:first-child {
+                width: 200px;
+                height: 70px;
+                background: #25AB75;
+                @include font(600,18px);
+                color: white;
+                border-radius: 10px;
+            }
+            button {
+                width: 200px;
+                height: 70px;
+                background: rgba(255,255,255, 0.1);
+                @include font(600,18px);
+                color: white;
+                border-radius: 10px;
+            }
+        }
+        .home-image {
+            transform: translate(-35%, -0%);
+            z-index: 1;
+            img {
+                min-height: 498px;
+                min-width: 380px;
+            }
+        }
+        .home-content:not(h1 span) {
+            z-index: 2;
+            transform: translateX(-8%);
+            
+        }
+    }
+}

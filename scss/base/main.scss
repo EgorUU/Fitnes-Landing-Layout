@@ -1,0 +1,26 @@
+// Base
+
+@import "./reset.scss";
+@import "./variables.scss";
+
+// Blocks
+
+@import "../blocks/header.scss";
+@import "../blocks/home.scss";
+@import "../blocks/exercises.scss";
+@import "../blocks/workout.scss";
+@import "../blocks/videos.scss";
+
+// Media 
+
+@import "./media.scss";
+
+
+// Fonts
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body, html {
+    background: black;
+    font-family: "Poppins", sans-serif;
+
+}

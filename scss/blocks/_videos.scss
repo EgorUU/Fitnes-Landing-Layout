@@ -1,0 +1,41 @@
+.videos {
+    display: flex;
+    justify-content: center;
+    .videos-container {
+        padding-bottom: 183px;
+        margin-top: 471px;
+    }
+    &-item {
+        display: flex;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+        //width: 1200px;
+        height: 203px;
+        align-items: center;
+        h2 {
+            padding-right: 289px;
+            @include font(600,25px);
+            color: rgba(255, 255, 255, 0.34)
+        }
+        &__content {
+            h1 {
+                @include font(400,50px);
+                color: rgba(255, 255, 255, 1);
+                
+            }
+            p {
+                @include font(400,14px);
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+    
+}
+.videos-item {
+    align-items: center;
+    //width: 1200px;
+    display: flex;
+    .content-arrow {
+        margin-left: auto;
+    }
+}

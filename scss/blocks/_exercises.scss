@@ -1,0 +1,96 @@
+.exercises {
+    &-header {
+
+    }
+    &-container {
+        max-width: 1199px;
+        margin: 0 auto;
+        .exercises-header h1 {
+            @include font(600,35px);
+            color: white;
+
+        }
+        .exercises-header h3 {
+            @include font(400,12px);
+            color: rgba(255,255,255, 0.67)
+        }
+        .exercises-header {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 50px;
+            align-items: center;
+        }
+
+    }
+    &-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 126px;
+        /*column-gap: 40px;*/
+        .exercises-item_1, .exercises-item_2, .exercises-item_3, .exercises-item_4, .exercises-item_5, .exercises-item_6 {
+            width: 373px;
+            height: 250px;
+            border-radius: 10px;
+
+        }
+        .exercises-item_1 {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,1)), url("../images/exercises/image 2.png");
+            background-size: cover;
+        }    
+        .exercises-item_2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,1)),url("../images/exercises/image 3.png");
+            background-size: cover;
+        }
+        .exercises-item_3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,1)),url("../images/exercises/image 4.png");
+            background-size: cover;
+        }
+        .exercises-item_4 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,1)),url("../images/exercises/image 6.png");
+            background-size: cover;
+        }
+        .exercises-item_5 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,1)),url("../images/exercises/image 7.png");
+            background-size: cover;
+        }
+        .exercises-item_6 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,1)),url("../images/exercises/image 12.png");
+            background-size: cover;
+        }
+        .exercises-item_content {
+            padding-left: 20px;
+            transform: translateY(290%);
+            p {
+                @include font(400, 13px);
+                color: rgba(255,255,255, 0.67);
+            }
+        }
+    }
+}
+.exercises-item_content_header {
+    h1 {
+        @include font(600, 50px);
+        color: rgb(255, 255, 255);
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    .time {
+        width: 72px;
+        height: 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        border-radius: 20px 0px 0px 0px;
+        h3 {
+            color: white;
+            @include font(600, 20px);
+            color: white;
+        }
+    }
+}
+body {
+    overflow-x: hidden;
+}
